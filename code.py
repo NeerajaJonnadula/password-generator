@@ -21,9 +21,9 @@ def copyclipboard():
     random_password = passwrd.get()
     pyperclip.copy(random_password)
 
-Label(root, text="Password Generator", font="Arial 50 bold").pack()
-Button(root, text="Generate Password", font="Arial 13 bold", command=generate).pack(pady=7)
-Entry(root, textvariable=passwrd).pack(pady=7)
-Button(root, text="Copy to Clipboard", font="Arial 13 bold", command=copyclipboard).pack()
+Label(root, text="Password Generator", font="Arial 50 bold").pack(pady=50)
+Button(root, text="Generate Password", font="Arial 13 bold", bg="yellow", command=generate).pack(pady=7)
+Entry(root, textvariable=passwrd, font="Arial 15 bold").pack(pady=20)
+Button(root, text="Copy to Clipboard", font="Arial 13 bold", bg="red", command=copyclipboard).pack()
 
 root.mainloop()
